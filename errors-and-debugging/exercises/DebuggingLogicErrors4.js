@@ -4,6 +4,7 @@
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
 // Is the program behaving as expected?
 
+   //The first if/else statement results in launchReady false, as expected, but the second if/else statement changes launchReady to true. Code is working as written but not as intended.
 let launchReady = false;
 let fuelLevel = 17000;
 let crewStatus = true;
