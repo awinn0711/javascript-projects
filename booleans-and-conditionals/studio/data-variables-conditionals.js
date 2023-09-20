@@ -21,7 +21,7 @@ if (astronautCount > 7) {
     preparedForLiftoff = false;
 }
 // add logic below to verify all astronauts are ready
-if (astronautStatus != "ready") {
+if (astronautStatus !== "ready") {
     preparedForLiftoff = false;
 } 
 // add logic below to verify the total mass does not exceed the maximum limit of 850000
