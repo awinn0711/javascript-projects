@@ -1,3 +1,10 @@
 h1 {
   text-decoration: underline;
+  color: white;
 }
+
+body {
+  background-color: rgb(43, 4, 57);
+  color: white;
+}
+
