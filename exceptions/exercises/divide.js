@@ -14,4 +14,4 @@ function division(numerator, denominator) {
     };
 };
 
-console.log(division(10,5));
+console.log(division(10,));

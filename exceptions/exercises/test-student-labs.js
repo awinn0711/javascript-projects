@@ -11,8 +11,8 @@ function gradeLabs(labs) {
   }
 };
 
-let studentLabs = [
-  {
+  let studentLabs = [
+{
     student: 'Carly',
     runLab: function (num) {
         return Math.pow(num, num);
@@ -21,7 +21,7 @@ let studentLabs = [
   {
     student: 'Erica',
     runLab: function (num) {
-        return num * num;
+      return num * num;
     }
   }
 ];
