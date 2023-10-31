@@ -6,8 +6,9 @@ window.addEventListener("load", function () {
     let imgObj = document.getElementById("rocket");
     imgObj.style.position = "absolute";
     imgObj.style.left = "50%";
-    imgObj.style.right = "50%";
+    // imgObj.style.right = "50%";
     imgObj.style.bottom = "0%";
+
 
     //set other variables
     let rocketBackground = document.getElementById("shuttleBackground");
@@ -35,6 +36,8 @@ window.addEventListener("load", function () {
             altitude = 10000;
             shuttleHeight.innerHTML = `${altitude}`;
             imgObj.style.bottom = "10px";
+            imgObj.style.left = "50%";
+            // imgObj.style.right = "50%"; 
         }
     });
 
@@ -46,6 +49,8 @@ window.addEventListener("load", function () {
         altitude = 0;
         shuttleHeight.innerHTML = `${altitude}`;
         imgObj.style.bottom = "0%";
+        imgObj.style.left = "50%";
+        // imgObj.style.right = "50%";
     });
 
     //abort mission on click
@@ -57,6 +62,8 @@ window.addEventListener("load", function () {
             altitude = 0;
             shuttleHeight.innerHTML = `${altitude}`;
             imgObj.style.bottom = "0%";
+            imgObj.style.left = "50%";
+            // imgObj.style.right = "50%";
         };
     });
 
@@ -66,16 +73,27 @@ window.addEventListener("load", function () {
         shuttleHeight.innerHTML = `${altitude}`;
         let picUp = parseInt(imgObj.style.bottom, 10);
         imgObj.style.bottom = picUp + 10 + "px";
+        console.log(imgObj);
+
     });
     downButton.addEventListener("click", function() {
         altitude -= 10000;
         shuttleHeight.innerHTML = `${altitude}`;
         let picDown = parseInt(imgObj.style.bottom, 10);
         imgObj.style.bottom = (picDown - 10) + "px";
+        console.log(imgObj);
+
     });
     rightButton.addEventListener("click", function() {
-        let picRight = parseInt(imgObj.style.right, 10);
-    })
+        // let picLeft = imgObj.offsetLeft;
+        imgObj.style.left = imgObj.offsetLeft + 10 + "px";
+        console.log(imgObj);
+    });
+    leftButton.addEventListener("click", function() {
+        // let picLeft = imgObj.offsetLeft;
+        imgObj.style.left = imgObj.offsetLeft - 10 + "px";
+        console.log(imgObj);
+    });
 
 
 });
