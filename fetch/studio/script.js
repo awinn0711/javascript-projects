@@ -26,6 +26,8 @@ window.addEventListener("load", function() {
                 };
                 
             };
+            //add astronaut count
+            document.querySelector("h1").innerHTML += `: ${json.length}`;
         });
     });
             
